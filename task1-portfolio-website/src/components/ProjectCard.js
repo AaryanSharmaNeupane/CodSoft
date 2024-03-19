@@ -1,28 +1,29 @@
 import React from "react";
-import logo from "../assets/images/aaryan.jpg";
 
-export const ProjectCard = () => {
+export const ProjectCard = ({ project }) => {
+  const { id, name, description, technologies, github_link, image } = project;
   return (
-    <div class="max-w-sm my-5    rounded-lg shadow  bg-gray-100 ">
-      <img class="rounded-t-lg" src={logo} alt="" />
+    <div className="max-w-sm mx-auto my-5 rounded-lg shadow bg-gray-100 flex flex-col h-full">
+      <div className="flex-grow">
+        <div className="h-64 flex items-center justify-center overflow-hidden rounded-t-lg">
+          <img className="object-cover h-full" src={image} alt="project" />
+        </div>
+      </div>
 
-      <div class="p-5">
+      <div className="p-5">
         <a href="#">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">
-            Noteworthy technology acquisitions 2021
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+            {name}
           </h5>
         </a>
-        <p class="mb-3 font-normal  text-gray-400">
-          Here are the biggest enterprise technology acquisitions of 2021 so
-          far, in reverse chronological order.
-        </p>
+        <p className="mb-3 font-normal text-gray-600">{description}</p>
         <a
-          href="#"
-          class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white  rounded-lg  focus:ring-4 focus:outline-none  bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+          href={github_link}
+          className="inline-flex items-center px-3 py-2 text-sm font-medium text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
         >
           Github Link
           <svg
-            class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+            className="w-3.5 h-3.5 ml-2"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -30,9 +31,9 @@ export const ProjectCard = () => {
           >
             <path
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M1 5h12m0 0L9 1m4 4L9 9"
             />
           </svg>

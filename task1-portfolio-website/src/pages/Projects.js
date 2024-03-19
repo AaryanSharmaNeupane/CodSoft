@@ -13,7 +13,7 @@ export const Projects = ({ id }) => {
         id={id}
       >
         {projects.map((project) => (
-          <ProjectCard />
+          <ProjectCard project={project} />
         ))}
       </div>
     </section>
