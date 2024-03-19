@@ -1,8 +1,8 @@
 import React from "react";
 
-export const About = () => {
+export const About = ({ id }) => {
   return (
-    <section className="py-12 bg-gray-100">
+    <section className="py-12 bg-gray-100" id={id}>
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-semibold text-gray-800 mb-4">

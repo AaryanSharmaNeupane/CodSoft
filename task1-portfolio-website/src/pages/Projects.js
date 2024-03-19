@@ -1,7 +1,7 @@
 import React from "react";
 import { ProjectCard } from "../components/ProjectCard";
 
-export const Projects = () => {
+export const Projects = ({ id }) => {
   const projects = [
     {
       name: "Yatraa",
@@ -42,12 +42,18 @@ export const Projects = () => {
   ];
 
   return (
-    <>
-      <div className="max-w-7xl flex flex-wrap items-center    justify-between m-auto">
+    <section className="bg-slate-800">
+      <h1 className="text-3xl font-semibold text-white py-4 text-center">
+        Projects
+      </h1>
+      <div
+        className="max-w-7xl flex flex-wrap items-center    justify-between m-auto  "
+        id={id}
+      >
         {projects.map((project) => (
           <ProjectCard />
         ))}
       </div>
-    </>
+    </section>
   );
 };

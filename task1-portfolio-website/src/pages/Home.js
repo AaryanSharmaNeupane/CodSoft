@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import Myphoto from "../assets/images/aaryan.jpg";
 
-export const Home = () => {
+export const Home = ({ id }) => {
   return (
     <>
-      <section className=" text-slate-400">
+      <section className="text-slate-400 " id={id}>
         <div className="max-w-7xl m-auto py-5 flex justify-evenly items-center ">
           <div className="max-w-56 ">
             <img className=" rounded-xl   mt-4" src={Myphoto} alt="Aaryan" />
@@ -17,7 +17,7 @@ export const Home = () => {
                 Aaryan Sharma
               </Link>
             </p>
-            <p className="mx-32"> , a MERN Stack Developer from Nepal.</p>
+            <p className="mx-32"> , a Full Stack Developer from Nepal.</p>
           </span>
         </div>
         <div className="flex max-w-7xl m-auto flex-col items-center justify-center">
