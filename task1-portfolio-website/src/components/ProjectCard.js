@@ -3,7 +3,7 @@ import logo from "../assets/images/aaryan.jpg";
 
 export const ProjectCard = () => {
   return (
-    <div class="max-w-sm my-5  border  rounded-lg shadow bg-gray-800 border-gray-700">
+    <div class="max-w-sm my-5    rounded-lg shadow  bg-gray-100 ">
       <img class="rounded-t-lg" src={logo} alt="" />
 
       <div class="p-5">

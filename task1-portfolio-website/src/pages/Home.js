@@ -1,23 +1,27 @@
 import React from "react";
 import { Link } from "react-scroll";
-import Myphoto from "../assets/images/aaryan.jpg";
+import Coding from "../assets/images/coding.gif";
 
 export const Home = ({ id }) => {
   return (
     <>
-      <section className="text-slate-400 " id={id}>
-        <div className="max-w-7xl m-auto py-5 flex justify-evenly items-center ">
-          <div className="max-w-56 ">
-            <img className=" rounded-xl   mt-4" src={Myphoto} alt="Aaryan" />
+      <section className="text-slate-400 bg-slate-900" id={id}>
+        <div className="max-w-7xl m-auto py-5 flex flex-row-reverse justify-around items-center ">
+          <div className>
+            <img
+              className="mt-4 rounded-lg max-w-lg"
+              src={Coding}
+              alt="Coding Gif"
+            />
           </div>
-          <span className=" px-12 text-3xl flex flex-col justify-between  ">
+          <span className=" text-3xl flex flex-col justify-between ">
             <p>
               Namaste! I am{" "}
               <Link className="text-blue-600" to="/">
-                Aaryan Sharma
+                Aaryan Sharma,
               </Link>
             </p>
-            <p className="mx-32"> , a Full Stack Developer from Nepal.</p>
+            <p className="pl-28"> a Full Stack Developer from Nepal.</p>
           </span>
         </div>
         <div className="flex max-w-7xl m-auto flex-col items-center justify-center">

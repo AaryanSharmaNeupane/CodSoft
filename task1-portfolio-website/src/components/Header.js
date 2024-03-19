@@ -35,6 +35,8 @@ export const Header = () => {
               <li>
                 <Link
                   to="home"
+                  delay={20}
+                  smooth={true}
                   offset={-headerHeight}
                   className="text-slate-400 hover:text-white cursor-pointer"
                   end
@@ -45,8 +47,10 @@ export const Header = () => {
               <li>
                 <Link
                   to="projects"
+                  delay={20}
+                  smooth={true}
                   offset={-headerHeight - 65}
-                  className="text-slate-400 hover:text-white cursor-pointer"
+                  className="text-slate-400 hover:text-white cursor-pointer "
                   end
                 >
                   Projects
@@ -55,6 +59,8 @@ export const Header = () => {
               <li>
                 <Link
                   to="about"
+                  delay={20}
+                  smooth={true}
                   offset={-headerHeight + 35}
                   className="text-slate-400 hover:text-white cursor-pointer"
                 >
@@ -64,6 +70,8 @@ export const Header = () => {
               <li>
                 <Link
                   to="contact"
+                  delay={20}
+                  smooth={true}
                   offset={-headerHeight}
                   className="text-slate-400 hover:text-white cursor-pointer"
                 >
