@@ -1,11 +1,15 @@
 import "./App.css";
 import { AllRoute } from "./routes/AllRoute";
+import { Header, Footer } from "./components";
 
 function App() {
   return (
     <>
       <Header />
-      <AllRoute />
+      <main>
+        <AllRoute />
+      </main>
+
       <Footer />
     </>
   );
