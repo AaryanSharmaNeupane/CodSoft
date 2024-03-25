@@ -32,16 +32,20 @@ export const Contact = ({ id }) => {
             </h3>
             <div className="flex items-center space-x-4">
               <a
-                href="https://github.com/AaryanSharmaNeupane"
+                href="https://www.linkedin.com/in/aaryan-sharma09/"
+                target="_blank"
+                rel="noreferrer"
                 className="text-gray-600 hover:text-gray-900"
               >
-                <i class="bi bi-linkedin"></i>
+                <i className="bi bi-linkedin"></i>
               </a>
               <a
-                href="https://www.linkedin.com/in/aaryan-sharma09/"
+                href="https://github.com/AaryanSharmaNeupane"
+                target="_blank"
+                rel="noreferrer"
                 className="text-gray-600 hover:text-gray-900"
               >
-                <i class="bi bi-github"></i>
+                <i className="bi bi-github"></i>
               </a>
             </div>
           </div>

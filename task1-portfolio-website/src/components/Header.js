@@ -39,7 +39,6 @@ export const Header = () => {
                   smooth={true}
                   offset={-headerHeight}
                   className="text-slate-400 hover:text-white cursor-pointer"
-                  end
                 >
                   Home
                 </Link>
@@ -49,9 +48,8 @@ export const Header = () => {
                   to="projects"
                   delay={20}
                   smooth={true}
-                  offset={-headerHeight - 65}
+                  offset={-headerHeight}
                   className="text-slate-400 hover:text-white cursor-pointer "
-                  end
                 >
                   Projects
                 </Link>
