@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+
 import Coding from "../assets/images/coding.gif";
 
 export const Home = ({ id }) => {
@@ -26,12 +27,21 @@ export const Home = ({ id }) => {
         </div>
         <div className="flex max-w-7xl m-auto flex-col items-center justify-center">
           <span className="m-5">
-            <button className="border p-3 rounded text-lg  m-3 hover:text-white  hover:ring-1 hover:ring-slate-50">
+            <a
+              href="/Resume.pdf"
+              download="Resume.pdf"
+              className="border p-3 rounded text-lg  m-3 hover:text-white  hover:ring-1 hover:ring-slate-50"
+            >
               Download Resume
-            </button>
-            <button className="border p-3 rounded text-lg  m-3 hover:text-white  hover:ring-1 hover:ring-slate-50">
+            </a>
+            <a
+              href="https://github.com/AaryanSharmaNeupane"
+              target="_blank"
+              rel="noreferrer"
+              className="border p-3 rounded text-lg  m-3 hover:text-white  hover:ring-1 hover:ring-slate-50"
+            >
               Visit Github
-            </button>
+            </a>
           </span>
           <p className="text-white text-lg p-4">
             Explore my projects, learn about my skills, and get in touch!
