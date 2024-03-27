@@ -49,3 +49,11 @@
 .productCard button:hover {
   background-color: #103f80;
 }
+
+.productCard button.remove {
+  background-color: #de0442;
+}
+
+.productCard button.remove:hover {
+  background-color: #9e0a34;
+}
