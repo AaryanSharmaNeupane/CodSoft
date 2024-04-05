@@ -9,6 +9,8 @@
 }
 
 header {
+  min-height: 70px;
+  max-width: 900px;
   margin-top: 15px;
   display: flex;
   align-items: center;
@@ -31,7 +33,7 @@ header .logo span {
   font-size: 22px;
   margin-left: 7px;
   cursor: pointer;
-  color: whitesmoke;
+  color: white;
 }
 
 .addTask {
@@ -46,9 +48,12 @@ header .logo span {
 .addTask form {
   display: flex;
   gap: 7px;
+
+  border-radius: 5px;
 }
 
 .addTask form input {
+  background-color: #e5e5e5;
   flex-grow: 1;
   padding: 5px 5px;
   border: 1px solid #eaeaea;
